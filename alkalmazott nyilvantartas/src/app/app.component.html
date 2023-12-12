@@ -1,0 +1,5 @@
+<app-employees-list>
+<button type="button" (click)="delete()"Törlés </button>
+<button type="button" *ngFor="let employee of employees" (click)="delete(employee)">{{employee.name}}</button>
+<form #employeeForm (ngSubmit)="onSubmit(employeeForm)"> ... </form>
+</app-employees-list>
